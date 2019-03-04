@@ -61,14 +61,14 @@ make
 #Installing
 make install
 
-# By default, binary installs into /usr/bin/ and zabbix config in /etc/zabbix/zabbix_agentd.conf.d/ but,
+# By default, binary installs into /var/lib/zabbix/ and zabbix config in /etc/zabbix/zabbix_agentd.d/ but,
 # you may manually copy binary to your executable path and zabbix config to specific include directory
 ```
 
 #### Arch Linux package
 ```sh
 # Building
-git clone https://github.com/zarplata/zabbix-agent-extension-elasticsearch.git
+git clone https://github.com/murtzsarialtun/zabbix-agent-extension-elasticsearch.git
 git checkout pkgbuild
 
 ./build.sh
@@ -79,7 +79,7 @@ pacman -U *.tar.xz
 
 ### Dependencies
 
-zabbix-agent-extension-elasticsearch requires [zabbix-agent](http://www.zabbix.com/download) v2.4+ to run.
+zabbix-agent-extension-elasticsearch requires [zabbix-agent](http://www.zabbix.com/download) v3.0+ to run.
 
 ### Zabbix configuration
 In order to start getting metrics, it is enough to import template and attach it to monitored node.
